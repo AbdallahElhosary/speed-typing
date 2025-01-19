@@ -48,7 +48,9 @@ const levels = {
     "normal": 3,
     "hard": 2
 }
-
+if (!localStorage.getItem("mode")) {
+    localStorage.setItem("mode" , "easy")
+}
 let mode = localStorage.getItem("mode")
 
 
